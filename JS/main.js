@@ -287,11 +287,98 @@ const isExisttt = users.every((user) =>{
 })
 console.log(isExisttt)*/
 
-const numbers = [1, 2, 3, 5, 6]
+/*const numbers = [1, 2, 3, 5, 6]
 const areAllNumbersOdd = numbers.every ((number) => {
     if (number %2 === 0) {
         return false;
     }
     return true;
 });
-console.log(areAllNumbersOdd)
+console.log(areAllNumbersOdd)*/
+
+/*const myArray = [];
+for (let i = 0; i < 10; i++){
+    myArray.push(i);
+}
+console.log(myArray)
+
+const myArrayy =[1, 2, 3, 4, 5]
+myArrayy.pop();
+console.log(myArrayy)
+
+const myArrayyy = [1,2,3,4]
+myArrayyy.shift()
+console.log(myArrayyy)
+
+const myArrray = [1,2,3,4,5,6]
+myArrray.unshift(0)
+console.log(myArrray)
+
+//push pop shift unshift*/
+
+/*const myArray = [1, 21, 51, 65];
+const myNumber = myArray.find((element) =>{
+    if(element === 51){
+        return element;
+    }
+})
+console.log(myNumber) */
+
+/*const user1 = {
+    name: "Hidayet"
+}
+const user2 = {
+    name : "Elxan"
+}
+ const myArray = [user1,user2];
+ const selectedUser = myArray.find((user) =>{
+  if (user.name === "Hidayet"){
+    return user;
+  }
+ })
+
+ console.log(selectedUser)*/
+  
+/*const numbers = [1,2,3,4,5,]
+let sum = 0;
+for (let i = 0; i< numbers.length; i++){
+sum += numbers[i]
+}
+console.log(sum)*/
+
+/*const numbers = [1,2,3,4,5,6]
+const sum = numbers.reduce((pre,cur) =>{
+    return pre + cur;
+},0);
+console.log(sum);*/
+
+const user1 = { 
+    name: "Kamal",
+    age: 18
+}
+const  user2 = {
+ name : "Rahim",
+ age : 18
+} 
+const user3 = {
+    name : "Abdul",
+    age: 18
+}
+const users = [user1,user2,user3];
+const sum = users.reduce((prev,curr) => {
+    return prev + curr.age
+},0);
+console.log(sum);
+
+const userss = ["Kamal", "Rahim", "Abdul", "Hidayat"];
+userss.sort()
+console.log(userss);
+
+const numbers = [2,55,4,120,32,256]
+numbers.sort((a,b) =>{
+    if(a > b){
+        return 1;
+    }
+    return -1
+})
+console.log(numbers)
